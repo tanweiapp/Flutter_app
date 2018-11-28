@@ -16,6 +16,10 @@ class HorizontalList extends StatelessWidget
               scrollDirection: Axis.horizontal,
               children: <Widget>[
                 new Container(
+                  child: new Image.network(
+                    'http://jspang.com/static/myimg/smile-vue.jpg',
+                    fit: BoxFit.contain,
+                  ),
                   width: 180,
                   color: Colors.lightBlue,
                 ),
