@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 import 'DoubanTheatersWidget.dart';
+import 'DetailPage.dart';
+import 'StudyFirst.dart';
 
+// void main() {
+//   runApp(DoubanTheatersWidget());
+//   runApp(DetailPage());
+// }
 void main() {
-  runApp(DoubanTheatersWidget());
+  runApp(
+    new MaterialApp(
+      title:'My App',
+      home:new DetailPage()
+    )
+  );
 }
-
 // void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
