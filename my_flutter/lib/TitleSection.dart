@@ -13,7 +13,7 @@ class TitleSection extends StatelessWidget{
                 new Container(
                   padding: const EdgeInsets.only(bottom: 8.0),
                   child: Text(
-                     'Oeschinen Lake Campground Oeschinen Lake Campground Oeschinen Lake Campground Oeschinen Lake Campground Oeschinen Lake Campground',
+                     'Oeschinen Lake Campgroundampground',
                     style:new TextStyle(
                       fontWeight: FontWeight.bold
                     )
@@ -33,19 +33,7 @@ class TitleSection extends StatelessWidget{
             color:Colors.red
           ),
           new Text('41'),
-          new Icon(
-            Icons.star,
-            color:Colors.red
-          ),
-          new Text('41'),new Icon(
-            Icons.star,
-            color:Colors.red
-          ),
-          new Text('41'),new Icon(
-            Icons.star,
-            color:Colors.red
-          ),
-          new Text('41')
+          
         ],
       ),
     );

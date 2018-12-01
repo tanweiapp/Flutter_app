@@ -18,6 +18,9 @@ void main() {
 // void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
+  _incrementCounter(){
+    print('sddsdsdsadwda');
+  }
   Widget build (BuildContext context){
     return MaterialApp(
       title: 'ListView Component',
@@ -39,14 +42,11 @@ class MyApp extends StatelessWidget{
              new Image.network(
               'http://jspang.com/static/myimg/smile-vue.jpg'
             ),
-            // new ListTile(
-            //   leading: new Icon(Icons.access_time),
-            //   title: new Text('access_time'),
-            // ),
-            // new ListTile(
-            //   leading: new Icon(Icons.account_balance),
-            //   title: new Text('account_balance'),
-            // )
+            new FloatingActionButton(
+           onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: new Text('Hello'),
+      ), 
           ],
         )
       ),

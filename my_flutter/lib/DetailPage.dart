@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import './TitleSection.dart';
+import 'TitleSection.dart';
+import 'IconsSetion.dart';
+import 'TextSection.dart';
 class DetailPage extends StatelessWidget{
   Widget build(BuildContext context){
     return new Scaffold(
@@ -8,13 +10,14 @@ class DetailPage extends StatelessWidget{
       ),
       body: new Column(
         children: <Widget>[
-          new Image.asset(
-            './images/test.jpg',
+          Image.network("https://www.baidu.com/img/bd_logo1.png",
             width:600,
             height:240,
-            fit:BoxFit.cover
+            // fit:BoxFit.cover
           ),
-          new TitleSection()
+          new TitleSection(),
+          new IconsSetion(),
+          new TextSection(),
         ],
       ),
     );
