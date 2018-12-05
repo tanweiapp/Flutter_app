@@ -12,7 +12,7 @@ class DetailPage extends StatelessWidget{
         children: <Widget>[
           // Image.network("https://www.baidu.com/img/bd_logo1.png",
            new Image.asset(
-             'images/test',
+             'assets/images/lake.jpg',
             // width:600,
             height:240,
             // fit:BoxFit.cover

@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'DoubanTheatersWidget.dart';
 import 'DetailPage.dart';
 import 'StudyFirst.dart';
+import './flutter_juejin/MyApp.dart';
 
-void main() {
-  runApp(DoubanTheatersWidget());
-}
+// void main() {
+//   runApp(DoubanTheatersWidget());
+// }
 // void main(){
 //   runApp(DetailPage());
 // }
@@ -18,44 +19,44 @@ void main() {
 //     )
 //   );
 // }
-// void main() => runApp(MyApp());
+void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget{
-  _incrementCounter(){
-    print('sddsdsdsadwda');
-  }
-  Widget build (BuildContext context){
-    return MaterialApp(
-      title: 'ListView Component',
-      home: Scaffold(
-        appBar: new AppBar(
-          title: new Text('ListView Widget'),
-        ),
-        body: new ListView(
-          children: <Widget>[
-            new Image.network(
-              'http://jspang.com/static/upload/20181111/G-wj-ZQuocWlYOHM6MT2Hbh5.jpg'
-            ),
-             new Image.network(
-              'http://jspang.com/static/upload/20181109/1bHNoNGpZjyriCNcvqdKo3s6.jpg'
-            ),
-             new Image.network(
-              'http://jspang.com/static/myimg/typescript_banner.jpg'
-            ),
-             new Image.network(
-              'http://jspang.com/static/myimg/smile-vue.jpg'
-            ),
-            new FloatingActionButton(
-           onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: new Text('Hello'),
-      ), 
-          ],
-        )
-      ),
-    );
-  }
-}
+// class MyApp extends StatelessWidget{
+//   _incrementCounter(){
+//     print('sddsdsdsadwda');
+//   }
+//   Widget build (BuildContext context){
+//     return MaterialApp(
+//       title: 'ListView Component',
+//       home: Scaffold(
+//         appBar: new AppBar(
+//           title: new Text('ListView Widget'),
+//         ),
+//         body: new ListView(
+//           children: <Widget>[
+//             new Image.network(
+//               'http://jspang.com/static/upload/20181111/G-wj-ZQuocWlYOHM6MT2Hbh5.jpg'
+//             ),
+//              new Image.network(
+//               'http://jspang.com/static/upload/20181109/1bHNoNGpZjyriCNcvqdKo3s6.jpg'
+//             ),
+//              new Image.network(
+//               'http://jspang.com/static/myimg/typescript_banner.jpg'
+//             ),
+//              new Image.network(
+//               'http://jspang.com/static/myimg/smile-vue.jpg'
+//             ),
+//             new FloatingActionButton(
+//            onPressed: _incrementCounter,
+//         tooltip: 'Increment',
+//         child: new Text('Hello'),
+//       ), 
+//           ],
+//         )
+//       ),
+//     );
+//   }
+// }
 
 // class MyApp extends StatelessWidget
 // {
