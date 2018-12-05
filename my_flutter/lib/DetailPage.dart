@@ -10,8 +10,10 @@ class DetailPage extends StatelessWidget{
       ),
       body: new Column(
         children: <Widget>[
-          Image.network("https://www.baidu.com/img/bd_logo1.png",
-            width:600,
+          // Image.network("https://www.baidu.com/img/bd_logo1.png",
+           new Image.asset(
+             'images/test',
+            // width:600,
             height:240,
             // fit:BoxFit.cover
           ),

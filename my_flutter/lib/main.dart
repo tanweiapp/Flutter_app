@@ -3,18 +3,21 @@ import 'DoubanTheatersWidget.dart';
 import 'DetailPage.dart';
 import 'StudyFirst.dart';
 
-// void main() {
-//   runApp(DoubanTheatersWidget());
+void main() {
+  runApp(DoubanTheatersWidget());
+}
+// void main(){
 //   runApp(DetailPage());
 // }
-void main() {
-  runApp(
-    new MaterialApp(
-      title:'My App',
-      home:new DetailPage()
-    )
-  );
-}
+
+// void main() {
+//   runApp(
+//     new MaterialApp(
+//       title:'My App',
+//       home:new DetailPage()
+//     )
+//   );
+// }
 // void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
