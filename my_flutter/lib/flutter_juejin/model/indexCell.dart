@@ -34,6 +34,8 @@ class IndexCell {
         title: json['title'],
         detailUrl: json['originalUrl'],
         isCollection: json['type'] ,
+
+        
      );
    }
 }
