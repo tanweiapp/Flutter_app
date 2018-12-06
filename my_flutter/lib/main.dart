@@ -3,6 +3,7 @@ import 'DoubanTheatersWidget.dart';
 import 'DetailPage.dart';
 import 'StudyFirst.dart';
 import './flutter_juejin/MyApp.dart';
+import './DynamicListView.dart';
 
 // void main() {
 //   runApp(DoubanTheatersWidget());
@@ -19,7 +20,13 @@ import './flutter_juejin/MyApp.dart';
 //     )
 //   );
 // }
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
+void main() => runApp(DynamicListView(
+  items: new List<String>.generate(1000, (i)=>"Item $i")
+  // items:new List<String>.generate(10000, (i)=>"Item $i")
+));
+
+
 
 // class MyApp extends StatelessWidget{
 //   _incrementCounter(){

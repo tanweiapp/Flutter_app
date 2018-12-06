@@ -24,7 +24,6 @@ getList(bool isLoadMore){
     getList(false);
   }
 
-  
    @override
   Widget build(BuildContext context){
     return Column(
