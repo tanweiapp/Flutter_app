@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 class DynamicListView extends StatelessWidget{
 
   final List<String> items;
+<<<<<<< HEAD
   // final List<String> items;
   DynamicListView({Key key,@required this.items}):super(key:key);
   // DynamicListView({Key key, @required this.items}):super(key:key);
+=======
+  DynamicListView({Key key, @required this.items}):super(key:key);
+>>>>>>> Dev
 
   @override
   Widget build(BuildContext context){

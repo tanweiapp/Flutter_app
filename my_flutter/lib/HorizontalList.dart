@@ -51,7 +51,12 @@ class HorizontalList extends StatelessWidget
       ),
     );
   }
+<<<<<<< HEAD
   // Widget build(BuildContext context){
+=======
+
+  // Widget build(BuildContext context){ //全部写一起
+>>>>>>> Dev
   //   return MaterialApp(
   //     title: 'Horizontal List',
   //     home: Scaffold(
