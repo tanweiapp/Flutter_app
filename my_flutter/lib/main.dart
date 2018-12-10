@@ -4,27 +4,37 @@ import 'DetailPage.dart';
 import 'StudyFirst.dart';
 import './flutter_juejin/MyApp.dart';
 import './DynamicListView.dart';
+import './RowComponent.dart';
+import './ColumnComponent.dart';
+import './StackComponent.dart';
 
 // void main() {
-//   runApp(DoubanTheatersWidget());
+//   runApp(DoubanTheatersWidget()); //  豆瓣入口
 // }
-// void main(){
-//   runApp(DetailPage());
-// }
+void main(){
+  runApp(StackComponent());
+}
 
 // void main() {
 //   runApp(
-//     new MaterialApp(
+//     new MaterialApp( // 加载本地图片的入口
 //       title:'My App',
 //       home:new DetailPage()
 //     )
 //   );
 // }
-// void main() => runApp(MyApp());
-void main() => runApp(DynamicListView(
-  items: new List<String>.generate(1000, (i)=>"Item $i")
-  // items:new List<String>.generate(10000, (i)=>"Item $i")
-));
+// void main() => runApp(MyApp());// 掘金入口
+
+// void main()=>(DynamicListView(// 动态加载 listView 
+// items: new List<String>.generate(1000, (i)=>"Item $i")
+// // items: new List<String>.generate(10000, (i)=>"Item $i")
+// ));
+
+
+// void main() => runApp(DynamicListView(
+//   items: new List<String>.generate(1000, (i)=>"Item $i")
+//   // items:new List<String>.generate(10000, (i)=>"Item $i")
+// ));
 
 
 
