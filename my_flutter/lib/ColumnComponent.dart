@@ -4,11 +4,15 @@ class ColumnComponent extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       title: 'Column Component',
+    
       home: Scaffold(
         appBar: new AppBar(
           title: new Text('Column Component'),
         ),
         body: Container(
+          width: 300,
+          height: 200,
+          color: Colors.lightBlue,
           padding: EdgeInsets.only(left: 15,right: 15),
           child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

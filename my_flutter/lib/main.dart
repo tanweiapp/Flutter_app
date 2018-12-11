@@ -7,12 +7,13 @@ import './DynamicListView.dart';
 import './RowComponent.dart';
 import './ColumnComponent.dart';
 import './StackComponent.dart';
+import './Example.dart';
 
 // void main() {
 //   runApp(DoubanTheatersWidget()); //  豆瓣入口
 // }
 void main(){
-  runApp(StackComponent());
+  runApp(Example());
 }
 
 // void main() {
