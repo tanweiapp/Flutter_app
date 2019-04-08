@@ -8,6 +8,7 @@ import 'dart:core';
 class IndexListCell extends StatelessWidget{
   final IndexCell cellInfo;
 
+//组建初始化构造方法
   IndexListCell({Key key,this.cellInfo}):super(key : key);
 
   TextStyle titleTextStyle = TextStyle(
@@ -16,7 +17,9 @@ class IndexListCell extends StatelessWidget{
     fontSize: 13,
   );
 
+// 渲染方法
   List<Widget>_buildFirstRow(){
+    // 声明一个空数组
     List<Widget> _listRow = new List();
     if(cellInfo.hot){
       _listRow.add(Text(
