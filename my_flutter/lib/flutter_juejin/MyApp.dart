@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:fluro/fluro.dart';
 
 import './pages/ActivityPage.dart';
 import './pages/BookPage.dart';
 import './pages/IndexPage.dart';
 import './pages/PinsPage.dart';
 import './pages/ReposPage.dart';
+import './routers/routes.dart';
+import './routers/application.dart';
 
 class MyApp extends StatefulWidget{
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin{
+  _MyAppState(){
+    final router = new Router();
+    Routes.configureRoutes(router);
+    Application.router = router;
+  }
+
   final TextStyle tabTextStyleNormal = TextStyle(color: const Color(0xffdddddd));
   final TextStyle tabTextStyleSelected = TextStyle(color: const Color(0xff4d91fd));
   TabController _tabController;
@@ -37,7 +46,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin{
         icon: Icon(Icons.local_activity),
       ),
   ];
-  var _body;
+  // var _body;
    List _appBarTitles = ['首页', '沸点', '小册', '开源库', '活动'];
    
    @override

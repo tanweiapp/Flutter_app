@@ -12,9 +12,9 @@ import './Example.dart';
 // void main() {
 //   runApp(DoubanTheatersWidget()); //  豆瓣入口
 // }
-void main(){
-  runApp(Example());
-}
+// void main(){
+//   runApp(Example());
+// }
 
 // void main() {
 //   runApp(
@@ -24,7 +24,7 @@ void main(){
 //     )
 //   );
 // }
-// void main() => runApp(MyApp());// 掘金入口
+void main() => runApp(MyApp());// 掘金入口
 
 // void main()=>(DynamicListView(// 动态加载 listView 
 // items: new List<String>.generate(1000, (i)=>"Item $i")
