@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'DoubanTheatersWidget.dart';
 import 'DetailPage.dart';
 import 'StudyFirst.dart';
-import './flutter_juejin/MyApp.dart';
+// import './flutter_juejin/MyApp.dart';
 import './DynamicListView.dart';
 import './RowComponent.dart';
 import './ColumnComponent.dart';
@@ -76,63 +76,61 @@ void main() => runApp(MyApp());// 掘金入口
 //   }
 // }
 
-// class MyApp extends StatelessWidget
-// {
-//  Widget build (BuildContext context){
-//    return MaterialApp(
-//      title: 'Image COmponent',
-//      home: Scaffold(
-//        body: Center(
-//          child: Container(
-//            child: new Image.network(
-//              'http://jspang.com/static/myimg/blogtouxiang.jpg',
-//             //  repeat: ImageRepeat.repeat,
-//              color: Colors.greenAccent,
-//              colorBlendMode: BlendMode.darken,
-//             //  scale: 1.0,
-//             //  fit: BoxFit.fitWidth,
-           
-//            ),
-//            width: 500.0,
-//            height: 500.0,
-//            color: Colors.lightBlue,
-          
-//          ),
-//        ),
-//      ),
-//    );
-//  }
-// }
+class MyApp extends StatelessWidget
+{
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title: 'Image Widget',
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            child: new Image.network(
+              'http://blogimages.jspang.com/blogtouxiang1.jpg',
+          // fit: BoxFit.contain,
+          scale: 1.0,
+          color: Colors.lightBlue,
+          colorBlendMode: BlendMode.darken,
+          repeat: ImageRepeat.repeat,
+            ),
+            width: 500.0,
+            height: 500.0,
+            color: Colors.lightBlue,
+        ),
 
-// class MyApp extends StatelessWidget{
-  
-//   Widget build(BuildContext context){
-//     return MaterialApp(
-//       title: 'Text widget',
-//       home: Scaffold(
-//         body: Center(
-//           child: Container(
-//             child: new Text('sdsdsdsdsddwdadawdsad',style: TextStyle(fontSize: 30),),
-//             alignment: Alignment.topLeft,
-//             // color: Colors.lightBlue,
-//             width: 500,
-//             height: 400,
-//             padding: const EdgeInsets.fromLTRB(10, 100, 50, 50),
-//             margin: const EdgeInsets.all(15),
-//             decoration: new BoxDecoration(
-//               gradient: const LinearGradient(
-//                 colors: [Colors.lightBlue,Colors.greenAccent,Colors.purple]
-//               ),
-//               border: Border.all(width: 2.0,color: Colors.red)
+        ),
+      ),
+    );
+  }
+}
+
+// class MyApp extends StatelessWidget{ // container 组件
+// Widget build(BuildContext context){
+//   return MaterialApp(
+//     title: 'Container Widget 01',
+//     home: Scaffold(
+//       body: Center(
+//         child: Container(
+//           child: new Text('Container Widget 01==Container Widget 01==Container Widget 01==Container Widget 01',style: TextStyle(fontSize: 25),),
+//           alignment: Alignment.topLeft,
+//           width: 400.0,
+//           height: 500.0,
+//           // color: Colors.lightGreen,
+//           padding: const EdgeInsets.fromLTRB(15,10,15,10),
+//           margin: const EdgeInsets.all(15),
+//           decoration: new BoxDecoration(
+//             gradient: const LinearGradient(
+//               colors: [Colors.lightBlue,Colors.blue,Colors.lightGreen,Colors.purple]
 //             ),
+//             border: Border.all(width: 2.0,color: Colors.red)
 //           ),
 //         ),
 //       ),
-//     );
-//   }
+//     ),
+//   );
+// }
 // }
 
-// class MyApp extends StatelessWidget{
+// class MyApp extends StatelessWidget{ // Text 组件
 //   @override
 //   Widget build(BuildContext contect){
 //     return MaterialApp(
@@ -141,13 +139,13 @@ void main() => runApp(MyApp());// 掘金入口
 //         body: Center(child: Text(
 //           'Hello Smile,窥探flutter窥探flutter窥探flutter窥探flutter窥探flutter窥探flutter',
 //           textAlign: TextAlign.left,
-//           overflow: TextOverflow.ellipsis,
-//           maxLines: 10,
+//           overflow: TextOverflow.ellipsis, // fade 渐变
+//           maxLines: 1, 
 //           style: TextStyle(
-//             fontSize: 25,
+//             fontSize: 25.0,
 //             color: Color.fromARGB(255, 255, 150, 150),
-//             decoration: TextDecoration.underline,
-//             decorationStyle: TextDecorationStyle.solid,
+//             decoration: TextDecoration.underline, // 下划线
+//             decorationStyle: TextDecorationStyle.solid, //git实线
 //           ),
 //           )
 //           ),

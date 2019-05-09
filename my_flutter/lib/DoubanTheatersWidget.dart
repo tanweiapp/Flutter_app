@@ -1,6 +1,6 @@
 
 import 'dart:convert';
-import 'package:http/http.dart' as http;
+// import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -50,13 +50,13 @@ class _MyHomeAppState extends State<MyHomeApp> {
 
   loadData() async {
     String loadRUL = "https://api.douban.com/v2/movie/in_theaters";
-    http.Response response = await http.get(loadRUL);
-    var result = json.decode(response.body);
-    setState(() {
-      title = result['title'];
-      print('title: $title');
-      subjects = result['subjects'];
-    });
+    // http.Response response = await http.get(loadRUL);
+    // var result = json.decode(response.body);
+    // setState(() {
+    //   title = result['title'];
+    //   print('title: $title');
+    //   subjects = result['subjects'];
+    // });
   }
 
   getItem(var subject) {
